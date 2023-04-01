@@ -1,0 +1,16 @@
+@import "global/base";
+@import "global/fonts";
+@import "global/mixin";
+@import "global/variables.scss";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "sections/main";
+@import "sections/results";
+@import "sections/history";
+@import "sections/work";
+@import "sections/new";
+@import "sections/sale.scss";
+@import "sections/nature.scss";
+@import "sections/start";
