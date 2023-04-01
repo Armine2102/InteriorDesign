@@ -1,7 +1,7 @@
 .main {
     background-color: $color-bg;
     position: relative;
-    height: 1300px;
+    height: 1200px;
     font-family: $font;
     &_big {
     display: flex;
@@ -169,7 +169,7 @@
       }
       }
       #page-wrapper .main {
-          height: 1040px;
+          height: 900px;
       }
       .title_img img {
         margin-left: 35px;
@@ -290,7 +290,7 @@
 }
 @media screen and (max-width: 767px){
     #page-wrapper .main {
-        height: 830px;
+        height: 750px;
         .img_big {
             width: 400px;
             height: 400px;
@@ -370,7 +370,7 @@
 }
 @media screen and (max-width: 575px){
     #page-wrapper .main {
-        height: 630px;
+        height: 550px;
        .img_big {
           width: 250px;
           height: 250px;
