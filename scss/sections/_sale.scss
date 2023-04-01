@@ -1,0 +1,34 @@
+.sale {
+    background: #96997E;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    font-family: $font;
+    &_text {
+        font-size: 35px;
+        text-align: center;
+        color: $color-white;
+        text-decoration: none;
+        transition: all;
+        white-space: nowrap;
+        animation: sale 15s infinite linear;
+        &:hover {
+            color: #3C4B34;
+          }
+      }
+  }
+  @keyframes sale {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0)
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .sale .sale_text {
+      font-size: 20px;
+   }
+  }

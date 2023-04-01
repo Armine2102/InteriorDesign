@@ -1,0 +1,189 @@
+.works {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-family: $font;
+  }
+  .work_img {
+    position: relative;
+    width: calc(100%/2);
+    height: 800px;
+    background-color: #B7C2B2;
+    margin-top: -100px;
+    border-radius: 7%;
+    .work_image {
+        position: absolute;
+        top: 70px;
+        left: 60px;
+        z-index: 1;
+        border-radius: 7%;
+        height: 800px;
+      }
+  }
+  .work_text {
+    width: 438px;
+    height: 510px;
+    border-radius: 7%;
+    background-color: #B7C2B2;
+    text-align: center;
+    margin-top: -26px;
+        .work_title {
+            font-size: 50px;
+            margin-top: 10px;
+            }
+        .work_subtitle {
+            font-size: 45px;
+            font-weight: 200;
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .work_btn {
+            padding: 16px 60px;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            font-size: 40px;
+            font-weight: 600;
+            color: #546F68;
+            text-decoration: none;
+            border: 5px solid $color-border;
+            transition: .3s all ease-in-out;
+            &:hover {
+                background-color: $color-border;
+                color: $color-white;
+              }
+        }
+        .round  {
+            width: 167px;
+            height: 167px;
+            margin-top: 85px;
+            margin-left: 160px;
+            border-radius: 50%;
+            border: 40px solid $color-border;
+          }
+  }
+
+@media screen and (max-width: 1199px) {
+   .work {
+    padding-top: 25px;
+   }
+    .works {
+        flex-wrap: wrap;
+      }
+      .work_img {
+          width: 550px;
+          height: 650px;
+          margin-left: -12px;
+      }
+      .work_img .work_image {
+          top: 76px;
+          left: 58px;
+          width: 520px;
+          height: 640px;
+      }
+      .work_text {
+          width: 363px;
+          height: 400px;
+          margin-left: 40px;
+          margin-right: -5px;
+          .work_subtitle {
+            font-size: 30px;
+        }
+        .work_title {
+            font-size: 50px;
+        }
+        .work_btn {
+            padding: 5px 50px;
+        }
+        .round {
+            width: 150px;
+            height: 150px;
+            margin-top: 82px;
+            margin-left: 118px;
+        }
+      }  
+}
+@media screen and (max-width: 991px){
+        .works {
+            flex-wrap: wrap;
+        }
+        .work_img {
+            width: 580px;
+            height: 670px;
+            margin-left: 0;
+            .work_image {
+                width: 580px;
+                height: 670px;
+            }
+        }
+        .work_text {
+            margin-top: 100px;
+            width: 580px;
+            height: 500px;
+            .work_title {
+                font-size: 60px;
+            }
+            .work_subtitle {
+                font-size: 45px;
+            }
+            .work_btn {
+                padding: 14px 70px;
+            }
+            .round {
+                display: none;
+            }
+        }
+}
+@media screen and (max-width: 767px){
+    .works {
+        margin-top: 100px;
+        flex-wrap: wrap;
+      }
+      .work_img {
+        height: 650px;
+        .work_image {
+            width: 530px;
+            height: 630px;
+            top: 64px;
+            left: 25px;
+          }
+      }
+      .work_text {
+        margin-left: 0;
+        margin-top: 70px;
+        .work_btn {
+            padding: 10px 35px;
+          }
+      }
+}
+@media screen and (max-width: 575px){
+    .works {
+        margin-top: 82%;
+      }
+      .work_img .work_image {
+        width: 300px;
+        height: 350px;
+        top: 50px;
+        left: 7px;
+      }
+      .work_img {
+        width: 300px;
+        height: 350px;
+      }
+      .work_text {
+        margin-top: 57px;
+        width: 300px;
+        height: 350px;
+        .work_title {
+            font-size: 35px;
+          }
+          .work_subtitle {
+            font-size: 28px;
+            }
+            .work_btn {
+                font-size: 30px;
+                padding: 5px 34px;
+            }
+      }
+      
+}

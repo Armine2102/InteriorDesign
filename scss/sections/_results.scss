@@ -1,0 +1,117 @@
+.results {
+    margin-top: 50px;
+    &_number {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 18px;
+    margin-bottom: -140px;
+    width: 100%;
+    margin-left: 15px;
+    font-family: $font;
+    .result_item {
+        height: 270px;
+        background-color: $color-green;
+        text-align: center;
+        color: $color-white;
+        font-size: 65px;
+        font-weight: 600;
+        z-index: 999;
+        svg {
+            padding-top: 25px;
+          } 
+          span {
+            display: block;
+            font-size: 40px;
+          }
+      }
+  }
+}
+.results { 
+    .result_img {
+    width: 100%;  
+  }
+}
+@media screen and (max-width: 1199px) {
+    .results_number {
+        margin-bottom: -100px;
+        width: 75%;
+        .result_item {
+            width: 160px;
+            height: 175px;
+            font-size: 55px;
+            padding-bottom: 10px;
+            span {
+                font-size: 30px;
+            }
+            }
+            svg {
+                padding-top: 10px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+@media screen and (max-width: 991px){
+        .results_number {
+            width: 100%;
+            justify-content: space-between;
+            .result_item {
+                width: 160px;
+                height: 160px;
+                padding-bottom: 15px;
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+}
+@media screen and (max-width: 767px){
+    .results {
+        margin-top: 20px;
+        z-index: 900;
+        position: relative;
+        &_number {
+            margin-left: 0;
+          }
+    }
+      .results_number .result_item {
+        width: 120px;
+        height: 130px;
+        font-size: 40px;
+        span {
+            font-size: 23px;
+            margin-top: -13px;
+          }
+      }
+}
+@media screen and (max-width: 575px){
+    .results {
+        margin-top: 15px;
+        z-index: 900;
+        position: relative;
+        &_number {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 0px;
+            margin-bottom: -112px;
+            grid-row-gap: 8px;
+            grid-template-rows: 50% 50%;
+            width: 83%;
+            margin-left: 0;
+          }
+      }
+      .results_number .result_item {
+        width: 100px;
+        height: 100px;
+        font-size: 25px;
+        span {
+            font-size: 18px;
+            margin-top: -10px;
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+}
