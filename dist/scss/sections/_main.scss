@@ -1,7 +1,7 @@
 .main {
     background-color: $color-bg;
     position: relative;
-    height: 1300px;
+    height: 1200px;
     font-family: $font;
     &_big {
     display: flex;
@@ -164,12 +164,12 @@
           right: 170px;
           width: 200px;
           height: 200px;
-          border: 40px solid #88A593;
+          border: 40px solid $color-green;
           animation:  round_big_1199 1s ease-in-out;
       }
       }
       #page-wrapper .main {
-          height: 1040px;
+          height: 900px;
       }
       .title_img img {
         margin-left: 35px;
@@ -290,7 +290,7 @@
 }
 @media screen and (max-width: 767px){
     #page-wrapper .main {
-        height: 830px;
+        height: 750px;
         .img_big {
             width: 400px;
             height: 400px;
@@ -315,7 +315,7 @@
             right: 38px;
             width: 150px;
             height: 150px;
-            border: 35px solid #88A593;
+            border: 35px solid $color-green;
             animation: round_big_767 1s ease-in-out;
           }
       }
@@ -370,7 +370,7 @@
 }
 @media screen and (max-width: 575px){
     #page-wrapper .main {
-        height: 630px;
+        height: 550px;
        .img_big {
           width: 250px;
           height: 250px;
@@ -382,7 +382,7 @@
         height: 45px;
         right: 22px;
         top: 77px;
-        border: 15px solid #687F71;
+        border: 15px solid $color-green2;
         animation: round_small_575 1.5s ease-in-out;
       }
       .img_small {
@@ -390,7 +390,7 @@
         top: 73px;
         width: 155px;
         height: 155px;
-        border: 18px solid #fff;
+        border: 18px solid $color-white;
         animation: img_small_575 1s ease-in-out;
       }
       .round_big {
@@ -398,7 +398,7 @@
         margin-top: 15%;
         width: 95px;
         height: 95px;
-        border: 25px solid #88A593;
+        border: 25px solid $color-green;
         animation: round_big_575 ease-in-out 1.5s;
       }
     }
@@ -420,7 +420,7 @@
         font-size: 20px;
         padding: 7px 10px;
         width: 110px;
-        border: 4px solid #88A593;
+        border: 4px solid $color-green;
       }  
       @keyframes img_small_575 {
         0% {
