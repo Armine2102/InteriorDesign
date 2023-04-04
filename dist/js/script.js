@@ -15,19 +15,28 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    const coll = document.getElementsByClassName("collapsible");
-    let i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
+    let cols = document.querySelectorAll('.collapsible')
+
+
+    cols.forEach(coll => {
+        coll.addEventListener("click", function() {
+            cols.forEach(item => {
+                if (item !== coll) {
+                    item.classList.remove('active')
+                    let content = item.nextElementSibling
+                    content.style.display = 'none'
+                }
+            })
+
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    })
+
 })
