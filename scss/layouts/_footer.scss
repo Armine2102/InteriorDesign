@@ -142,15 +142,6 @@
             margin-left: -10px;
             border-bottom: 1px solid $color-light-green;
           }
-          &_adress_mobile {
-            display: block;
-            text-decoration: none;
-            font-size: 18px;
-            font-family: none;
-            color: $color-logo;
-            margin-left: -10px;
-            border-bottom: 1px solid $color-light-green;
-          }
           &_nav_link {
             display: block;
           }
@@ -169,35 +160,17 @@
         font-weight: 500;
         border-bottom: 1px solid $color-light-green;
       }
-      .active, .collapsible:hover {
+      .active, .collapsible:active {
         background-color: #99A58F;
         color: $color-black;
       }
       .menu_content_mobile {
         @include footer;
       }
-      .contact_content_mobile {
-        @include footer;
-      }
-      .address_content_mobile {
-        @include footer;
+     .menu_content_mobile:nth-child(2) {
         margin-left: -13px;
         margin-top: 3px;
-      }
-      .address_content_mobile a {
-        color: $color-light-green;
-        display: block;
-        padding-left: 5px;
-        position: relative;
-        top: -6px;
-        text-decoration: none;
-        border-bottom: 1px solid $color-light-green;
-        text-decoration: none;
-        font-size: 18px;
-        font-family: none;
-        color: $color-logo;
-        border-bottom: 1px solid $color-light-green;
-      }
+     } 
       .copyright {
         font-size: 18px;
         color: $color-logo;

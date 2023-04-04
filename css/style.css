@@ -302,14 +302,6 @@ body {
       color: #474747;
       margin-left: -10px;
       border-bottom: 1px solid #6D765B; }
-    .footer_adress_mobile {
-      display: block;
-      text-decoration: none;
-      font-size: 18px;
-      font-family: none;
-      color: #474747;
-      margin-left: -10px;
-      border-bottom: 1px solid #6D765B; }
     .footer_nav_link {
       display: block; }
   .collapsible {
@@ -325,7 +317,7 @@ body {
     color: #474747;
     font-weight: 500;
     border-bottom: 1px solid #6D765B; }
-  .active, .collapsible:hover {
+  .active, .collapsible:active {
     background-color: #99A58F;
     color: #000; }
   .menu_content_mobile {
@@ -333,31 +325,9 @@ body {
     display: none;
     overflow: hidden;
     background-color: #CBDBD1; }
-  .contact_content_mobile {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #CBDBD1; }
-  .address_content_mobile {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #CBDBD1;
+  .menu_content_mobile:nth-child(2) {
     margin-left: -13px;
     margin-top: 3px; }
-  .address_content_mobile a {
-    color: #6D765B;
-    display: block;
-    padding-left: 5px;
-    position: relative;
-    top: -6px;
-    text-decoration: none;
-    border-bottom: 1px solid #6D765B;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: none;
-    color: #474747;
-    border-bottom: 1px solid #6D765B; }
   .copyright {
     font-size: 18px;
     color: #474747;
