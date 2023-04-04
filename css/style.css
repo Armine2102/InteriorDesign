@@ -113,13 +113,13 @@ body {
     right: -100%;
     height: 100vw;
     background-color: #687F71;
+    width: 100%;
     z-index: 20;
     transition: .2s all; }
     .menu .nav_link {
       color: #474747;
       font-size: 35px;
-      border-bottom: 1px solid #474747;
-      margin-right: -55px; }
+      border-bottom: 1px solid #474747; }
   .nav_toggle {
     width: 40px;
     display: block;
@@ -146,19 +146,15 @@ body {
     .nav_toggle_active span:nth-child(3) {
       transform: translateY(3px) rotate(45deg); }
   .menu_active {
-    display: block;
-    display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 50%;
     align-items: center;
     right: 0;
-    width: 50%;
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 35px; }
-  .menu .nav_link:last-child {
-    margin-left: 45px; }
   .header_menu .logo {
     font-size: 45px;
     z-index: 999; } }
