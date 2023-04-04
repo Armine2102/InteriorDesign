@@ -300,26 +300,27 @@ body {
       font-size: 20px;
       font-family: none;
       color: #474747;
-      margin-left: -10px;
+      margin-top: 10px;
       border-bottom: 1px solid #6D765B; }
     .footer_nav_link {
       display: block; }
   .collapsible {
     background-color: #CBDBD1;
-    color: #ffffff;
     cursor: pointer;
     padding: 7px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 28px;
+    font-size: 20px;
     color: #474747;
-    font-weight: 500;
+    font-weight: 550;
     border-bottom: 1px solid #6D765B; }
   .active, .collapsible:active {
     background-color: #99A58F;
     color: #000; }
+  .collapsible:nth-child(1):active .menu_content_mobile:nth-child(2) {
+    display: none; }
   .menu_content_mobile {
     padding: 0 18px;
     display: none;
@@ -346,8 +347,12 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 575px) {
+  .footer_nav_link_mobile {
+    font-size: 16px; }
+  .collapsible {
+    font-size: 18px; }
   .copyright {
-    font-size: 18px; } }
+    font-size: 17px; } }
 
 .main {
   background-color: #CBDBD1;
