@@ -139,7 +139,7 @@
             font-size: 20px;
             font-family: none;
             color: $color-logo;
-            margin-left: -10px;
+            margin-top: 10px;
             border-bottom: 1px solid $color-light-green;
           }
           &_nav_link {
@@ -148,16 +148,15 @@
       }
       .collapsible {
         background-color: $color-bg;
-        color: $color-white;
         cursor: pointer;
         padding: 7px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 28px;
+        font-size: 20px;
         color: $color-logo;
-        font-weight: 500;
+        font-weight: 550;
         border-bottom: 1px solid $color-light-green;
       }
       .active, .collapsible:active {
@@ -170,7 +169,7 @@
      .menu_content_mobile:nth-child(2) {
         margin-left: -13px;
         margin-top: 3px;
-     } 
+     }
       .copyright {
         font-size: 18px;
         color: $color-logo;
@@ -193,8 +192,18 @@
         margin-left: 0;
       }
 }
-@media screen and (max-width: 575px){
-     .copyright {
-      font-size: 18px;
-    }
-}
+
+ @media screen and (max-width: 575px) {
+   .footer {
+     &_nav_link_mobile {
+       font-size: 16px;
+     }
+   }
+   .collapsible {
+     font-size: 18px;
+   }
+
+   .copyright {
+     font-size: 17px;
+   }
+ }
