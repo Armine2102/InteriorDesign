@@ -315,8 +315,6 @@ body {
   .active, .collapsible:active {
     background-color: #99A58F;
     color: #000; }
-  .collapsible:nth-child(1):active .menu_content_mobile:nth-child(2) {
-    display: none; }
   .menu_content_mobile {
     padding: 0 18px;
     display: none;
@@ -688,8 +686,7 @@ body {
     font-size: 25px; }
   .title_info .title_btn {
     font-size: 20px;
-    padding: 7px 10px;
-    width: 110px;
+    text-align: center;
     border: 4px solid #88A593; }
   @keyframes img_small_575 {
     0% {

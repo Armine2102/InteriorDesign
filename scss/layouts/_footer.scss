@@ -163,9 +163,6 @@
         background-color: #99A58F;
         color: $color-black;
       }
-      .collapsible:nth-child(1):active .menu_content_mobile:nth-child(2) {
-        display: none;
-      }
       .menu_content_mobile {
         @include footer;
       }
